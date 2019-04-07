@@ -1,0 +1,16 @@
+.fc-event {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  font-size: 1.2em;
+  text-wrap: normal !important;
+  transition-duration: 0.2s;
+}
+
+.fc-content {
+  white-space: normal!important;
+}
+
+.fc-event:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
