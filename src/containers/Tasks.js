@@ -13,7 +13,6 @@ const tasks = ({addTask, updateTask, todaysTasks, weeksTasks, monthsTasks, compl
             b: ['priority', true],
             label: 'Priority'
         },
-        
         {
             a: ['dueDate', true],
             b: ['assignedDate', true],
