@@ -13,12 +13,12 @@ const dataVersion = 2;
 const generate = (doctor = {}) => {
     nextDoctorId += 1;
     return {
-        id: nextDoctorId,
-        name: faker.name.firstName() + ' ' + faker.name.lastName(),
-        email: faker.internet.email(),
-        hospital: randomHospital().name,
-        office: 'Office ' + faker.random.arrayElement([1, 2, 3, 4, 5, 6, 7, 8, 9, 0])+ faker.random.arrayElement([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]) + faker.random.arrayElement(['A', 'B', 'C', 'D']),
-        ...doctor
+            id: nextDoctorId,
+            name: nextDoctorId === 1 ? "N/A" : faker.name.firstName() + ' ' + faker.name.lastName(),
+            email: nextDoctorId === 1 ? "N/A" :faker.internet.email(),
+            hospital: nextDoctorId === 1 ? "N/A" :randomHospital().name,
+            office: nextDoctorId === 1 ? "N/A" : 'Office ' + faker.random.arrayElement([1, 2, 3, 4, 5, 6, 7, 8, 9, 0])+ faker.random.arrayElement([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]) + faker.random.arrayElement(['A', 'B', 'C', 'D']),
+            ...doctor
     };
 };
 

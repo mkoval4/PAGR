@@ -11,12 +11,27 @@ const tasks = ({addTask, updateTask, todaysTasks, weeksTasks, monthsTasks, compl
         {
             a: ['dueDate', true],
             b: ['priority', true],
-            label: 'Priority'
+            label: 'Priority (Descending)'
+        },
+        {
+            a: ['dueDate', true],
+            b: ['priority', false],
+            label: 'Priority (Ascending)'
+        },
+        {
+            a: ['dueDate', true],
+            b: ['dueDate', true],
+            label: 'Due date'
+        },
+        {
+            a: ['dueDate', true],
+            b: ['assignedDate', false],
+            label: 'Assigned date (Newest)'
         },
         {
             a: ['dueDate', true],
             b: ['assignedDate', true],
-            label: 'Request for Assistance'
+            label: 'Assigned date (Oldest)'
         }
     ];
 
