@@ -45,7 +45,7 @@ const EditTaskModal = ({onCloseClicked, updateTask, task, doctors}) => {
                             <Grid.Column>
                                 <Form.Field>
                                     <Form.Select
-                                        label='Doctor'
+                                        label='Request for Assistance'
                                         labelPosition='left'
                                         fluid
                                         onChange={(e, {value}) => setDoctor(value)}

@@ -18,9 +18,9 @@ const generate = (category = {}) => {
 };
 
 const seed = () => {
-    categoryList.push(generate({name: 'Category 1'}));
-    categoryList.push(generate({name: 'Category 2'}));
-    categoryList.push(generate({name: 'Category 3'}));
+    categoryList.push(generate({name: 'Low'}));
+    categoryList.push(generate({name: 'Medium'}));
+    categoryList.push(generate({name: 'High'}));
 };
 
 const saveState = () => {

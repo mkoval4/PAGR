@@ -1,7 +1,5 @@
 # PAGR
 
-Proof of concept app build on React.JS with Semantic UI.
-
 ## Quick Start
 - `npm install` (Only First Time)
 - `npm start`
